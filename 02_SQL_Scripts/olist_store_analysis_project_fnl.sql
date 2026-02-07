@@ -1,3 +1,10 @@
+-- ============================================================
+-- Project: E-Commerce Sales Delivery Performance
+-- Database: MySQL
+-- Author: Mohammad Faiz
+-- Objective: End-to-End E-Commerce Data Ingestion, Cleaning & KPI Analysis
+-- ============================================================
+
 /* ============================================================
    PHASE 0: DATABASE SETUP
    ============================================================
