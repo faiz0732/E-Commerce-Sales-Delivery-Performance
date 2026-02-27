@@ -1,6 +1,6 @@
 # 🛒 OLIST E-Commerce Sales & Delivery Performance Dashboard
 
-An end-to-end e-commerce analytics project using **SQL, Excel, Tableau, and Power BI** to analyze sales trends, customer behavior, seller distribution, payment methods, and delivery performance.
+An end-to-end e-commerce analytics project using **SQL, Python, Excel, Tableau, and Power BI** to analyze sales trends, customer behavior, seller distribution, payment methods, and delivery performance.
 
 ---
 
@@ -12,6 +12,7 @@ The goal is to analyze **orders, revenue, customers, sellers, payments, logistic
 The project demonstrates a **complete analytics lifecycle**:
 - Raw CSV ingestion
 - SQL-based data modeling & KPI creation
+- Python-based data cleaning, feature engineering & EDA
 - Excel & Tableau exploratory analysis
 - Power BI executive dashboards
 - Business storytelling & insights
@@ -59,20 +60,24 @@ The project demonstrates a **complete analytics lifecycle**:
 
 ### 1️⃣ Data Ingestion
 - Imported raw CSV files into MySQL
+- Loaded datasets into Python (Pandas) for analysis
 - Initial inspection using Excel
 
-### 2️⃣ Data Cleaning & Preparation (SQL)
+### 2️⃣ Data Cleaning & Preparation (SQL & Python)
 - Standardized date formats
 - Handled NULL delivery dates
 - Aggregated payment values at order level
-- Created analytical views
+- Created analytical views in SQL
+- Performed feature engineering in Python (delivery_days, weekday/weekend, delivery_status)
 
-### 3️⃣ SQL-Based Analysis
+### 3️⃣ Analytical Modeling
 - Database schema creation
-- Order-level fact view creation
-- KPI calculations using SQL
+- Order-level fact view creation in SQL
+- Built analysis-ready dataframe in Python using Pandas merge & groupby
+- KPI calculations using SQL and Python
 
 ### 4️⃣ Exploratory Data Analysis
+- Python (Pandas, NumPy, Matplotlib, Seaborn) for trend analysis and visualization
 - Excel for validation & checks
 - Tableau for relationship-based analysis
 
@@ -91,10 +96,11 @@ The project demonstrates a **complete analytics lifecycle**:
 | Category | Tools Used | Purpose |
 |---|---|---|
 | Database & Analysis | MySQL (Workbench) | Data cleaning & KPI creation |
+| Programming & EDA | Python (Pandas, NumPy, Matplotlib, Seaborn) | Data cleaning, feature engineering & exploratory analysis |
 | Data Preparation | Microsoft Excel | Validation & aggregation |
 | BI & Visualization | Tableau | Exploratory dashboarding |
 | BI & Visualization | Power BI | Executive dashboards |
-| Version Control | GitHub | Project documentation |
+| Presentation & Documentation | Microsoft Office (PowerPoint) | Presentation & executive summary |
 
 ---
 
@@ -135,6 +141,17 @@ The project demonstrates a **complete analytics lifecycle**:
 
 ---
 
+### 🐍 Python Analysis Notebook
+- Data cleaning & preprocessing using Pandas
+- Feature engineering (delivery_days, day_type, delivery_status)
+- Order-level dataset creation using merge & groupby
+- Revenue trend analysis
+- Product-level revenue contribution
+- Delivery performance vs review score analysis
+- Data visualizations using Matplotlib & Seaborn
+
+---
+
 ## 📂 Repository Structure
 
 | Folder | Content | Purpose |
@@ -146,9 +163,8 @@ The project demonstrates a **complete analytics lifecycle**:
 | `05_Dashboard_PowerBI` | `Olist_Ecommerce_Analysis.pbix` | Multi-page Power BI dashboard visualizing sales, customers, sellers, delivery, and performance KPIs. |
 | `06_Deliverables` | `Olist_Project_Presentation.pptx` | Final project presentation containing business insights and dashboard explanation. |
 | `07_Visuals` | `dashboard_screenshots.png` | Exported images of Excel, Tableau, and Power BI dashboards for GitHub preview. |
+| `08_Python_Analysis` | `Olist_Analysis.ipynb` | Python notebook containing data cleaning, feature engineering, EDA, KPI validation, and visualizations. |
 | `README.md` | Project documentation | Complete project overview, methodology, KPIs, dashboards, insights, and conclusions. |
-
-
 
 ---
 
@@ -182,6 +198,9 @@ Attribution is required if reused.
   <!-- MySQL -->
   <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" width="45"/>
 
+  <!-- Python -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="45"/>
+
   <!-- Microsoft Excel -->
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg" width="45"/>
 
@@ -196,14 +215,14 @@ Attribution is required if reused.
 </p>
 
 **Tools Used:**
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
 - Microsoft Excel  
 - MySQL Workbench  
 - Tableau Desktop  
 - Power BI Desktop  
 - Microsoft PowerPoint
 
-
 ---
 
 ⭐ Skills Demonstrated:  
-SQL, Data Cleaning, Data Modeling, KPI Development, Excel Analytics, Tableau, Power BI, Business Storytelling, End-to-End Data Analytics
+SQL, Python (Pandas & EDA), Data Cleaning, Data Modeling, KPI Development, Excel Analytics, Tableau, Power BI, Business Storytelling, End-to-End Data Analytics
